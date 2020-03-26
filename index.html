@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+	<title>#4</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/jquery-ui.css"/>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-ui.js" ></script>
+	<script type="text/javascript">
+		  $(function() {
+			$( ".datepicker" ).datepicker({
+				dateFormat: "dd.mm.yy"
+			});
+			$('nav a').click(function(){
+				$(this).next('ul').slideToggle('slow');
+				$(this).parent('li').toggleClass('active')
+			});
+			$('.close').click(function(){
+				$(this).parents('tr').fadeOut('slow')
+			});
+		  });
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="content">
+			<div class="header">
+				<h1>500px: Editors' Choice</h1>
+				<div class="view-date">
+					<div class="view">
+						<a href="#" class="view-1">/</a>
+						<a href="#" class="view-2">/</a>
+					</div>
+					<div class="date">
+						<p>За период: <input type="text" class="datepicker"> - <input type="text" class="datepicker"></p>
+					</div>
+				</div>
+			</div>
+			<div class="foundation">
+				<table>
+					<tr class="headlines">
+						<td></td>
+						<td class="title"><span>Название</span></td>
+						<td class="date"><span>Дата публикаци</span></td>
+						<td class="rating"><span>Рейтинг</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="#">Print This Checklist to Better Prepare for Your Next Job Interview</a></td>
+						<td>12:53   <b>20.10.2013</b></td>
+						<td class="rating">
+							<a href="#">28</a>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="#">How I Finally Paid Off a Lifetime of Credit Card Debt</a></td>
+						<td>12:53   <b>20.10.2013</b></td>
+						<td class="rating">
+							<a href="#">28</a>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="#">Ask an Expert: All About the Psychology of Eating Well</a></td>
+						<td>12:53   <b>20.10.2013</b></td>
+						<td class="rating">
+							<a href="#">28</a>
+						</td>
+						<td></td>
+					</tr>
+					<tr class="show-article">
+						<td></td>
+						<td colspan="3">
+							<div class="article">
+								<h2>How do I deal with constant rejection?</h2>
+								<span class="close"></span>
+								<div class="article-content">
+									<img src="images/article-1.png">
+									<p class="text">Great discussions are par for the course here on Lifehacker. Each day, we highlight a discussion that is particularly helpful or insightful, along with other great discussions and reader questions you may have missed. Check out these discussions and add your own thoughts to make them even more wonderful!</p>
+									<p><a href="#">Is it even worth saving for college anymore?</a></br>
+									Can you really make a tablet productive in a work environment?</br>
+									<b>Get Involved!</b></p>
+								</div>
+								<div class="article-footer">
+									<div class="date">12:53   <b>20.10.2013</b></div>
+									<div class="like">
+										<a href="#" class="liked">Понравилось</a>
+										<a href="#" class="quantity">28</a>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="#">Print This Checklist to Better Prepare for Your Next Job Interview</a></td>
+						<td>12:53   <b>20.10.2013</b></td>
+						<td class="rating">
+							<a href="#">28</a>
+						</td>
+						<td></td>
+					</tr>
+				</table>	
+			</div>
+		</div>
+		<div class="lsitebar">
+			<div class="logo">
+				<img src="images/logo.png" alt="logo">
+			</div>
+			<div class="news">
+				<p>Все новости</p>
+				<span class="quantity">57</span>
+				<span class="new">+3</span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Программирование</a>
+						<ul class="secondary-param">
+							<li>
+								<a href="#" alt="C++">C++</a>
+							</li>
+							<li>
+								<a href="#" alt="Ruby">Ruby</a>
+							</li>
+							<li>
+								<a href="#" alt="500px: Editors' Choice">500px: Editors' Choice</a>
+							</li>
+							<li>
+								<a href="#" alt="Techacker">Techacker</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Дизайн</a>
+					</li>
+					<li>
+						<a href="#">Песни народов мира</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="rsitebar">
+			<form>
+				<input type="text" name="q" value="Поиск">
+				<input type="image" src="images/search.png">
+			</form>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Задать вопрос эксперту</a>
+					</li>
+					<li>
+						<a href="#">База знаний</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#">Стафф Масттер система</a>
+					</li>
+					<li>
+						<a href="#">Вакансии</a>
+					</li>
+					<li>
+						<a href="#">Доументы</a>
+					</li>
+					<li>
+						<a href="#">Конференции</a>
+					</li>
+					<li>
+						<a href="#">Биометрия</a>
+					</li>
+					<li>
+						<a href="#">Поделиться новостью</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="subscribe">
+				<ul>
+					<li>
+						<a href="#" class="facebook">facebook</a>
+					</li>
+					<li>
+						<a href="#" class="instagram">instagram</a>
+					</li>
+					<li>
+						<a href="#" class="vk">vk</a>
+					</li>
+					<li>
+						<a href="#" class="google">google</a>
+					</li>
+					<li>
+						<a href="#" class="twitter">twitter</a>
+					</li>
+					<li>
+						<a href="#" class="twitt">twitt</a>
+					</li>
+				</ul>
+			</div>
+			<p class="rule">
+				Информация, размещенная на сайте, является конфиденциальной и предназначена исключительно для внутреннего пользования сотрудниками группы компаний Noosphere Ventures. Копирование и распространение материалов с этого ресурса, частично либо полностью, запрещено!
+			</p>
+		</div>
+	</div>
+</body>
+</html>
